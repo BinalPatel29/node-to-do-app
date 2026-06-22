@@ -91,12 +91,18 @@ async function main() {
       console.log(chalk.red(`✓ Task ${idToDelete} was deleted successfully.`));
       break;
 
+    case "clear":
+      await saveTodos([]);
+      console.log(chalk.yellow("All tasks have been cleared successfully"));
+      break;
+
     default:
       console.log(chalk.magenta("Usage instructions:"));
       console.log("  node todo.js add 'Task Name'");
       console.log("  node todo.js list");
       console.log("  node todo.js done [id]");
       console.log("  node todo.js delete [id]");
+      console.log("  node todo.js clear");
       break;
   }
 }

@@ -1,0 +1,13 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A color-coded terminal todo application",
+  "main": "todo.js",
+  "scripts": {
+    "start": "node todo.js"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
+}

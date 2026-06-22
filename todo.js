@@ -19,7 +19,6 @@ async function readTodos() {
   }
 }
 
-// Save data array down to file
 async function saveTodos(todos) {
   try {
     await fs.promises.writeFile(FILE_PATH, JSON.stringify(todos, null, 2), "utf8");
